@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Saira Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+nav{
+    background: whitesmoke;
+    text-align: right;
+    padding-bottom: 2px;
+    box-shadow: 0 0 25px 0 black;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.logo{
+    float: left;
+    width: 70px;
+    margin: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 80px;
+    border-radius: 100px;
+  
+  }
+.navlink{
+   display: inline-flex;
+   list-style: none;
+   color: rgb(255, 255, 255); 
+   pad
+}
+.navlink li{
+    width: 120px ;
+    padding: 15px;
+    margin: 15px;
+}
+.navlink li a{
+    text-decoration: none;
+    color: green;
+    
+}
+.anta-regular {
+    font-family: "Anta", sans-serif;
+    font-weight: bolder;
+    font-size: medium;
+  }
+  
+.navlink li a:hover{
+    color: darkgray;
+}
+.navlink .fa{
+    margin-right: 8px;
+}
+.dropdown{
+    display: none;
+    background: whitesmoke;
+}
+.navlink li:hover .dropdown{
+    display: block;
+    position: absolute;
+    box-shadow: 0 0 20px 0 whitesmoke;
+    background: green
+    margin-top: 5px;
+    margin-left: -15px;
+    z-index: 3;
+}
+.navlink li:hover .dropdown ul{
+    display: block;
+    
+}
+.navlink li:hover .dropdown ul li{
+    width: 150px;
+    padding: 10px;
+    background: whitesmoke;
+    border-radius: 0;
+    text-align: left;
+}
+.navlink li:hover .dropdown ul li a:hover{
+    color: darkgray
+}
+.hamburger div{
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.hamburger{
+    display: none;
+}
+.lg{
+	display: none;
+}
+.header{
+	text-align: center;
+	padding-top: 55px;
+	padding-bottom: 55px;
+	font-size: 50px;
+	color: #000000a2;
+	background: url('images/slider311.png');
+
+}
+.contact 
+{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: whitesmoke;
+	backdrop-filter: blur(15px);
+}
+.contact .content 
+{
+	max-width: 800px;
+	text-align: center;
+	
+}
+.contact .content h2 
+{
+	font-size: 3em;
+	color: #000;
+	font-weight: 500;
+	background:
+
+}
+.contact .content p 
+{
+	color: #000;
+	font-size: 1.1em;
+	font-weight: 300;
+}
+.container 
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	margin-top: 30px;
+}
+.container .contactInfo 
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.container .contactInfo .box 
+{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+	cursor: pointer;
+}
+.container .contactInfo .box .icon 
+{
+	min-width: 60px;
+	height: 60px;
+	background: white;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.75em;
+	transition: 0.5s;
+}
+.container .contactInfo .box:hover .icon 
+{
+	background: transparent;
+	color: black;
+}
+.container .contactInfo .box .text 
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+	font-size: 1.1em;
+	color: #fff;
+	font-weight: 300;
+}
+.container .contactInfo .box .text h3 
+{
+	font-weight: 400;
+	color: #449955;
+}
+.container .contactInfo .box .text p{
+	color: #449955;
+	font-weight: 700;
+}
+.container .contactInfo .txt
+{
+	color: #0c0c0c94;
+	margin-top: 50px;
+	font-weight: 500;
+	padding-left: 10px;
+	line-height: 1em;
+}
+.sci 
+{
+	position: relative;
+	display: flex;
+	gap: 30px;
+	margin: 20px 0;
+}
+.sci li 
+{
+	list-style: none;
+}
+.sci li a
+{
+	font-size: 2em;
+	transition: 0.5s;
+}
+.sci li a:hover 
+{
+	color: #00bcd4;
+}
+
+
+.container .contactForm
+{
+	position: relative;
+	width: 40%;
+	background: #fff;
+	min-height: 100px;
+	padding: 60px;
+	box-shadow: 0 0 5px 0 black;
+} 
+.container .contactForm h2 
+{
+	font-size: 2em;
+	color: rgba(3, 48, 3, 0.959);
+	font-weight: 500;
+}
+.container .contactForm .inputBox 
+{
+	position: relative;
+	width: 100%;
+	margin-top: 20px;
+}
+.container .contactForm .inputBox input, 
+.container .contactForm .inputBox textarea 
+{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 1.1em;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+
+.container .contactForm .inputBox span 
+{
+	position: absolute;
+	left: 0;
+	pointer-events: none;
+	padding: 5px 0;
+	margin: 10px 0;
+	font-size: 1.1em;
+	color: #666;
+	transition: 0.5s;
+}
+.container .contactForm .inputBox input:focus ~ span, 
+.container .contactForm .inputBox textarea:focus ~ span,
+.container .contactForm .inputBox input:valid ~ span, 
+.container .contactForm .inputBox textarea:valid ~ span 
+{
+	color: #e91e63;
+	font-size: 0.9em;
+	transform: translateY(-20px);
+}
+.container .contactForm .inputBox input[type="submit"]
+{
+	width: 100px;
+	color: white;
+	background: rgba(3, 48, 3, 0.959);
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 1.1em;
+	font-weight: 500;
+}
+.container .contactForm .inputBox input[type="submit"]:hover{
+	background: #fff;
+	color: #000;
+	border: 1px solid black;
+}
+footer .wallpaper{
+    margin-top: 40px;
+    background: url(/images/footer-back.jpg);
+    border: none;
+  }
+  .row{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 40px 80px;
+
+  }
+  
+  
+  .row .logol h7{
+    margin-bottom: 25px;
+    color: green;
+    font-size: 30px;
+    font-style: 22px;
+    font-family: "Saira Condensed", sans-serif;
+  }
+  .row .logol p{
+    color: whitesmoke;
+    font-family: "Saira Condensed", sans-serif;
+ }
+ .wallpaper .row .footer-colomn .logol .fa{
+    margin-left: 8px;
+ }
+ 
+  .footer .footer-colomn ul{
+    list-style: none;
+  }
+  
+  .footer-colomn3 .text-box p{
+    font-size: larger;
+    display: inline-block;
+    color: whitesmoke;
+    margin-top: 20px;
+  }
+  .footer-colomn4 h6{
+    color: green;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-style: 22px;
+    font-family: "Saira Condensed", sans-serif;
+  }
+  .footer-colomn4 ul li{
+    color: rgb(0, 255, 47);
+  }
+  .footer-colomn4 ul i{
+    color: black
+  }
+  .footer-colomn3 .text-box h7{
+    margin-bottom: 25px;
+    color: green;
+    font-size: 30px;
+    font-style: 22px;
+     font-family: Arial, Helvetica, sans-serif;
+  }
+  .footer-colomn3 .text-box p{
+    font-size: 15px;
+    color: green;
+  }
+  
+  
+  .footer-colomn4 ul li{
+    padding: 10px 0;
+  }
+  .footer-colomn4 ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.7s;
+    transition: 0.5s;
+  }
+  .footer-colomn4 ul li a:hover{
+    opacity: 1;
+    color: black;
+  }
+  .footer-colomn input{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding left: 20px;
+    margin: 14px 0;
+  }
+  .footer-colomn .InputSubmit{
+    padding: 8px 20px;
+    background-color: green;
+    border: none;
+    color: white;
+  }
+  .rowl .coll p{
+    color: white;
+    padding-bottom: 10px;
+    justify-self: center;
+    text-align: center;
+  }
+  .row .socialIcons i{
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    margin: 0 15px;
+    transition: 0.5s;
+    padding-left: 20px;
+  }
+  .footer-colomn34 h8{
+    margin-left: 2px;
+    color: green;
+    font-size: 30px;
+    font-style: 22px;
+    font-family: "Saira Condensed", sans-serif;
+  }
+  .footer-colomn34 p{
+    color: whitesmoke;
+    font-size: 15px;
+    font-family: "Saira Condensed", sans-serif;
+  }
+@media only screen and (max-width: 1080px){
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .logo{
+     display: none;
+    }
+    .navlink .fa{
+        
+    }
+    .navlink li:hover .dropdown{
+        display: block;
+        position: absolute;
+        margin-top: -40px;
+        margin-left: 100px;
+        }
+        .navlink li:hover .dropdown ul li{
+            margin-right: auto;
+            text-align: center;
+            background-color: #2bab0d;
+        }
+        .navlink li:hover .dropdown ul li a{
+            margin-left: -29px;
+            
+        }
+        .navlink li:hover .dropdown ul li a:hover{
+            color: black;
+        }
+        .row{
+          display: block;
+        }
+ 
+    .hamburger{
+        display: inline-block;
+        position: absolute;
+        cursor: pointer;
+        right: auto;
+        top: 20%;
+        margin-top: 40px;
+        margin-left: 20px;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        
+        transition: all 0.5s ease;
+    }
+    .navlink{
+        position: absolute;
+        display: block;
+        height: auto;
+        width: auto;
+        margin-top: 5px;
+        margin-left: -15px;
+        
+    }
+     .navlink .open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+        display: block;
+        
+
+    }
+    .navlink li{
+       opacity: 0; 
+       display: block;
+       width: 500px ;
+       padding: auto;
+       margin: auto;
+       background-color: #2bab0d;
+    }
+    .navlink li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .navlink li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .navlink li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .navlink li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .navlink li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .navlink li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .navlink li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fade{
+        opacity: 1;
+    }
+    .navlink li a{
+       display: block;
+       height: 100%;
+       width: 100%;
+       line-height: 40px;
+       font-size: 15px;
+       font-weight: bold;
+       color: whitesmoke;
+       transition: .4s;
+       text-align: center;
+       padding-left: 50px;
+    }
+    .navlink li a:hover{
+        color: black;
+    }
+
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px)
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+ }
+ .toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+ }
+ 
+
+/* lets make it responsive */
+@media (max-width: 991px)
+{
+	.contact
+	{
+		padding: 50px;
+	}
+	.container
+	{
+		flex-direction: column;
+	}
+	.container .contactInfo,
+	.container .contactForm
+	{
+		width: 100%;
+	}
+	.container .contactForm
+	{
+		padding: 50px 30px;
+	}
+}
