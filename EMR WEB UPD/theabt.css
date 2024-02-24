@@ -91,6 +91,7 @@ nav{
     text-align: center;
     background: url(/images/slider31.png);
     padding: 55px 55px;
+    font-size: 70px;
 }
 .header img{
     height: 30vh;
@@ -415,8 +416,11 @@ footer .wallpaper{
     .navlink li a:hover{
         color: black;
     } 
+    .header h2{
+        font-size: 20px;
+    }
     .container{
-        width: 80%;
+        width: 90%;
         display: block;
         margin: auto;
         padding-top: 50px;
@@ -427,20 +431,13 @@ footer .wallpaper{
         display: block;
         margin: auto;
     }
-    .image-content{
-        float: none;
-        width: 100%;
-        display: block;
-        margin: auto;
-    }
     .content-section .h1{
         text-align: center;
-        font-size: 19px;
+        font-size: 15px;
     }
     .content-section p{
         font-size: 12px;
     }
-    .image-content{
-        margin-top: 10px;
-    }
+    .image-content
+    
    
